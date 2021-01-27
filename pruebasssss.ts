@@ -1,5 +1,3 @@
-/*---Mini Proyecto de Fundamentos---*/
-
 class Movie {
     public title:string;
     public releaseYear:number;
@@ -22,19 +20,23 @@ class Movie {
         this.genre = genre;
     }
 
+    public setLanguage(newLanguage) {
+        this.nationality = newLanguage;
+    }
+
     public toString():string {
         return "Título: " + this.title + "\n" + 
         "Año de lanzamiento: " + this.releaseYear + "\n" + 
-        "Actores: " + this.actors + "\n" + 
+        "Actores: " + + "\n" + 
         "Nacionalidad: " + this.nationality + "\n" + 
-        "Director: " + this.director + "\n" + 
-        "Guionista: " + this.writer + "\n" + 
-        "Idioma: " + this.language + "\n" + 
-        "Plataforma: " +  this.platform+ "\n" + 
-        "¿Pertenece al MCU?: " + this.isMCU + "\n" + 
-        "Actor principal: " + this.mainCharacterName + "\n" + 
-        "Productora: " + this.producer + "\n" + 
-        "Distribuidora: " + this.distributor + "\n" + 
-        "Género: " + +this.genre + "\n";
+        "Director: " + + "\n" + 
+        "Guionista: " + + "\n" + 
+        "Idioma: " + + "\n" + 
+        "Plataforma: " + + "\n" + 
+        "¿Pertenece al MCU?: " + + "\n" + 
+        "Actor principal: " + + "\n" + 
+        "Productora: " + + "\n" + 
+        "Distribuidora: " + + "\n" + 
+        "Género: " + + "\n" + 
     }
 }
