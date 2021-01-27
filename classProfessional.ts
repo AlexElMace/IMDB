@@ -66,6 +66,6 @@ export class Movie {
         "Actor principal: " + this.mainCharacterName + "\n" + 
         "Productora: " + this.producer + "\n" + 
         "Distribuidora: " + this.distributor + "\n" + 
-        "Género: " + +this.genre + "\n";
+        "Género: " + this.genre + "\n";
     }
 }
