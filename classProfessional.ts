@@ -1,6 +1,6 @@
 /*---Mini Proyecto de Fundamentos---*/
 
-class Movie {
+export class Movie {
     public title:string;
     public releaseYear:number;
     public actors:Professional[];
