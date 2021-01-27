@@ -11,7 +11,7 @@ let prof8 : Professional = new Professional("Natalia Gastiain Tena", 36, "femeni
 let prof9 : Professional = new Professional("Juan Antonio García Bayona", 45, "masculino", 1.70, 82, "moreno", "marron", "blanca", false, "española", 0, "director");
 let prof10 : Professional = new Professional("Iciar Bollain Pérez-Mínguez", 53, "femenino", 1.55, 59, "pelirrojo", "verdes", "blanca", false, "española", 0, "actriz y directora");
 
-console.log(prof1.professional());
+/*console.log(prof1.professional());
 console.log(prof2.professional());
 console.log(prof3.professional());
 console.log(prof4.professional());
@@ -20,14 +20,14 @@ console.log(prof6.professional());
 console.log(prof7.professional());
 console.log(prof8.professional());
 console.log(prof9.professional());
-console.log(prof10.professional());
+console.log(prof10.professional());*/
 
 import {Movie} from "./classProfessional"
 
-let movie1:Movie = new Movie("Gladiator", 2000, "Estados Unidos", "Acción");
-movie1.actors = [prof1, prof2, prof3, prof4, prof5, prof6, prof7, prof8, prof9, prof10];
-movie1.director = [prof1, prof2, prof3, prof4, prof5, prof6, prof7, prof8, prof9, prof10];
-movie1.writer = [prof1, prof2, prof3, prof4, prof5, prof6, prof7, prof8, prof9, prof10];
+let movie1:Movie = new Movie("La piel que habito", 2011, "España", "Thriller Psicológico");
+movie1.actors = [prof7];
+movie1.director = [prof6];
+movie1.writer = [prof6];
 movie1.language = "Inglés"
 movie1.platform = "Cine"
 movie1.isMCU = false;

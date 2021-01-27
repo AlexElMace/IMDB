@@ -11,7 +11,7 @@ var prof7 = new classProfessional_1.Professional("Elena Anaya Gutiérrez", 45, "
 var prof8 = new classProfessional_1.Professional("Natalia Gastiain Tena", 36, "femenino", 1.72, 70, "castaño", "verdes", "blanca", false, "británica", 0, "actriz y músico");
 var prof9 = new classProfessional_1.Professional("Juan Antonio García Bayona", 45, "masculino", 1.70, 82, "moreno", "marron", "blanca", false, "española", 0, "director");
 var prof10 = new classProfessional_1.Professional("Iciar Bollain Pérez-Mínguez", 53, "femenino", 1.55, 59, "pelirrojo", "verdes", "blanca", false, "española", 0, "actriz y directora");
-console.log(prof1.professional());
+/*console.log(prof1.professional());
 console.log(prof2.professional());
 console.log(prof3.professional());
 console.log(prof4.professional());
@@ -20,4 +20,16 @@ console.log(prof6.professional());
 console.log(prof7.professional());
 console.log(prof8.professional());
 console.log(prof9.professional());
-console.log(prof10.professional());
+console.log(prof10.professional());*/
+var classProfessional_2 = require("./classProfessional");
+var movie1 = new classProfessional_2.Movie("La piel que habito", 2011, "España", "Thriller Psicológico");
+movie1.actors = [prof7];
+movie1.director = [prof6];
+movie1.writer = [prof6];
+movie1.language = "Inglés";
+movie1.platform = "Cine";
+movie1.isMCU = false;
+movie1.mainCharacterName = "Rusell Crowe";
+movie1.producer = "Scott Free Productions";
+movie1.distributor = "Universal Pictures";
+console.log(movie1.toString());
