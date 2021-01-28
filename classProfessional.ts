@@ -5,8 +5,8 @@ export class Movie {
     public releaseYear:number;
     public actors:Professional[];
     public nationality:string;
-    public director:Professional[];
-    public writer:Professional[];
+    public director:Professional;
+    public writer:Professional;
     public language:string;
     public platform:string;
     public isMCU:boolean;
@@ -23,18 +23,24 @@ export class Movie {
     }
 
     public toString():string {
-        return "Título: " + this.title + "\n" + 
-        "Año de lanzamiento: " + this.releaseYear + "\n" + 
-        "Actores: " + this.actors + "\n" + 
-        "Nacionalidad: " + this.nationality + "\n" + 
-        "Director: " + this.director + "\n" + 
-        "Guionista: " + this.writer + "\n" + 
-        "Idioma: " + this.language + "\n" + 
-        "Plataforma: " +  this.platform+ "\n" + 
-        "¿Pertenece al MCU?: " + this.isMCU + "\n" + 
-        "Actor principal: " + this.mainCharacterName + "\n" + 
-        "Productora: " + this.producer + "\n" + 
-        "Distribuidora: " + this.distributor + "\n" + 
-        "Género: " + this.genre + "\n";
+        let i;
+        let actores = "";
+        for (i=0; i<this.actors.length; i++) {
+            actores += this.actors[i].name + ", ";
+        }
+        return actores;
+        console.log("Título: " + this.title) + 
+        console.log("Año de lanzamiento: " + this.releaseYear) + 
+        console.log("Actores: " + actores) + 
+        console.log("Nacionalidad: " + this.nationality) + 
+        return "Director: " + this.director.name + "\n" + 
+        return "Guionista: " + this.writer.name + "\n" + 
+        console.log("Idioma: " + this.language + "\n") + 
+        console.log("Plataforma: " +  this.platform) + 
+        console.log("¿Pertenece al MCU?: " + this.isMCU) + 
+        console.log("Actor principal: " + this.mainCharacterName) + 
+        console.log("Productora: " + this.producer) + 
+        console.log("Distribuidora: " + this.distributor) + 
+        console.log("Género: " + this.genre);
     }
 }
