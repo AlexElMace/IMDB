@@ -127,4 +127,4 @@ var arrayMov = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, 
 var imbd1 = new classImbd_1.Imbd(arrayMov);
 var fs = require("fs");
 var objetoJSON = JSON.stringify(imbd1);
-fs.writeFileSync("/Modulo 1/Dia 13/MiniProyecto/MiniProyecto/imdbBBDD.json", objetoJSON);
+fs.writeFileSync("./imbdBBDD.json", objetoJSON);
