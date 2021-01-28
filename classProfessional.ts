@@ -22,19 +22,18 @@ export class Movie {
         this.genre = genre;
     }
 
-    public toString():string {
-        let i;
-        let actores = "";
+    public toString() {
+        let i:number;
+        let actores:string = "";
+        console.log("Título: " + this.title)
+        console.log("Año de lanzamiento: " + this.releaseYear)
         for (i=0; i<this.actors.length; i++) {
             actores += this.actors[i].name + ", ";
         }
-        return actores;
-        console.log("Título: " + this.title)
-        console.log("Año de lanzamiento: " + this.releaseYear)
-        console.log("Actores: " + actores)
+        console.log(actores);
         console.log("Nacionalidad: " + this.nationality) 
-        return "Director: " + this.director.name 
-        return "Guionista: " + this.writer.name 
+        console.log("Director: " + this.director.name)
+        console.log("Guionista: " + this.writer.name) 
         console.log("Idioma: " + this.language)
         console.log("Plataforma: " +  this.platform) 
         console.log("¿Pertenece al MCU?: " + this.isMCU) 
