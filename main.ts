@@ -1,6 +1,6 @@
 import {Professional} from "./classProfessional";
 import {Movie} from "./classMovie";
-import {Imbd} from "./classImbd";
+import {Imdb} from "./classImbd";
 
 let prof1 : Professional = new Professional("William Bradley Pitt", 57, "cine", 1.80, 78, "rubio", "azules", "blanca", false, "estadounidense", 2, "actor y productor");
 let prof2 : Professional = new Professional("George Timothy Clooney", 59, "cine", 1.78, 80, "cano", "marrones", "blanca", false, "estadounidense", 2, "actor, director, productor y guionista");
@@ -145,8 +145,8 @@ movie1.producer = "Tiger Aspect Productions"
 movie1.distributor = "BBC"
 
 let arrayMov:Movie[] = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10];
-let imbd1:Imbd = new Imbd(arrayMov);
+let imdb1:Imdb = new Imdb(arrayMov);
 
 import * as fs from "fs"
-const objetoJSON = JSON.stringify(imbd1);
-fs.writeFileSync("./imbdBBDD.json", objetoJSON);
+const objetoJSON = JSON.stringify(imdb1);
+let imbdJSON:Imdb = JSON.parse(fs.readFileSync("./imdbBBDD.json", "utf-8"));
