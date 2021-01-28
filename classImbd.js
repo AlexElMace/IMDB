@@ -7,7 +7,7 @@ var Imdb = /** @class */ (function () {
         this.peliculas = peliculas;
     }
     Imdb.prototype.escribirEnFicheroJSON = function (nombreFichero) {
-        fs.writeFileSync("./imdbBBDD.json", nombreFichero);
+        fs.writeFileSync("./imdbBBDD.json", fs.readFileSync(nombreFichero, "utf-8"));
     };
     Imdb.prototype.obtenerInstanciaIMDB = function (nombreFichero) {
         return JSON.parse(fs.readFileSync(nombreFichero, "utf-8"));

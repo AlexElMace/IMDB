@@ -10,7 +10,7 @@ export class Imdb {
     }
     
     public escribirEnFicheroJSON(nombreFichero:string) {
-        fs.writeFileSync("./imdbBBDD.json", nombreFichero)
+        fs.writeFileSync("./imdbBBDD.json", fs.readFileSync(nombreFichero, "utf-8"))
     }
 
     public obtenerInstanciaIMDB(nombreFichero:string):Imdb {
