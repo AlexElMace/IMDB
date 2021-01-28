@@ -1,4 +1,6 @@
 import {Professional} from "./classProfessional";
+import {Movie} from "./classMovie";
+import {Imbd} from "./classImbd";
 
 let prof1 : Professional = new Professional("William Bradley Pitt", 57, "cine", 1.80, 78, "rubio", "azules", "blanca", false, "estadounidense", 2, "actor y productor");
 let prof2 : Professional = new Professional("George Timothy Clooney", 59, "cine", 1.78, 80, "cano", "marrones", "blanca", false, "estadounidense", 2, "actor, director, productor y guionista");
@@ -11,7 +13,7 @@ let prof8 : Professional = new Professional("Natalia Gastiain Tena", 36, "cine",
 let prof9 : Professional = new Professional("Juan Antonio García Bayona", 45, "cine", 1.70, 82, "moreno", "marron", "blanca", false, "española", 0, "director");
 let prof10 : Professional = new Professional("Iciar Bollain Pérez-Mínguez", 53, "cine", 1.55, 59, "pelirrojo", "verdes", "blanca", false, "española", 0, "actriz y directora");
 
-console.log(prof1.professional());
+/*console.log(prof1.professional());
 console.log(prof2.professional());
 console.log(prof3.professional());
 console.log(prof4.professional());
@@ -20,19 +22,23 @@ console.log(prof6.professional());
 console.log(prof7.professional());
 console.log(prof8.professional());
 console.log(prof9.professional());
-console.log(prof10.professional());
-
-import {Movie} from "./classProfessional"
+console.log(prof10.professional());*/
 
 let movie1:Movie = new Movie("La piel que habito", 2011, "España", "Thriller Psicológico");
+
 movie1.actors = [prof7];
-movie1.director = [prof6];
-movie1.writer = [prof6];
-movie1.language = "Inglés"
+movie1.director = prof6;
+movie1.writer = prof6;
+movie1.language = "Español"
 movie1.platform = "Cine"
 movie1.isMCU = false;
-movie1.mainCharacterName = "Rusell Crowe"
-movie1.producer = "Scott Free Productions"
-movie1.distributor = "Universal Pictures"
+movie1.mainCharacterName = "Antonio Banderas"
+movie1.producer = "El Deseo P.C"
+movie1.distributor = "Warners España"
 
 console.log(movie1.toString())
+
+
+let imbd1:Imbd = new Imbd();
+
+console.log(imbd1);
