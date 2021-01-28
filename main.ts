@@ -144,7 +144,5 @@ movie1.mainCharacterName = "Cillian Murphy"
 movie1.producer = "Tiger Aspect Productions"
 movie1.distributor = "BBC"
 
-/*console.log(movie1.toString())*/
-
 let arrayMov:Movie[] = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10];
 let imbd1:Imbd = new Imbd(arrayMov);
