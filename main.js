@@ -123,7 +123,8 @@ movie1.isMCU = false;
 movie1.mainCharacterName = "Cillian Murphy";
 movie1.producer = "Tiger Aspect Productions";
 movie1.distributor = "BBC";
-/*console.log(movie1.toString())*/
 var arrayMov = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10];
 var imbd1 = new classImbd_1.Imbd(arrayMov);
-console.log(imbd1);
+var fs = require("fs");
+var objetoJSON = JSON.stringify(imbd1);
+fs.writeFileSync("/Modulo 1/Dia 13/MiniProyecto/MiniProyecto/imdbBBDD.json", objetoJSON);

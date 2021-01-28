@@ -146,3 +146,7 @@ movie1.distributor = "BBC"
 
 let arrayMov:Movie[] = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10];
 let imbd1:Imbd = new Imbd(arrayMov);
+
+const fs = require("fs")
+const objetoJSON = JSON.stringify(imbd1);
+fs.writeFileSync("/Modulo 1/Dia 13/MiniProyecto/MiniProyecto/imdbBBDD.json", objetoJSON);
