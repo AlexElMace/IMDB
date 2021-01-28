@@ -29,18 +29,18 @@ export class Movie {
             actores += this.actors[i].name + ", ";
         }
         return actores;
-        console.log("Título: " + this.title) + 
-        console.log("Año de lanzamiento: " + this.releaseYear) + 
-        console.log("Actores: " + actores) + 
-        console.log("Nacionalidad: " + this.nationality) + 
-        return "Director: " + this.director.name + "\n" + 
-        return "Guionista: " + this.writer.name + "\n" + 
-        console.log("Idioma: " + this.language + "\n") + 
-        console.log("Plataforma: " +  this.platform) + 
-        console.log("¿Pertenece al MCU?: " + this.isMCU) + 
-        console.log("Actor principal: " + this.mainCharacterName) + 
-        console.log("Productora: " + this.producer) + 
-        console.log("Distribuidora: " + this.distributor) + 
+        console.log("Título: " + this.title)
+        console.log("Año de lanzamiento: " + this.releaseYear)
+        console.log("Actores: " + actores)
+        console.log("Nacionalidad: " + this.nationality) 
+        return "Director: " + this.director.name 
+        return "Guionista: " + this.writer.name 
+        console.log("Idioma: " + this.language)
+        console.log("Plataforma: " +  this.platform) 
+        console.log("¿Pertenece al MCU?: " + this.isMCU) 
+        console.log("Actor principal: " + this.mainCharacterName) 
+        console.log("Productora: " + this.producer) 
+        console.log("Distribuidora: " + this.distributor) 
         console.log("Género: " + this.genre);
     }
 }
