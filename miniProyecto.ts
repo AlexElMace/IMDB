@@ -1,2 +1,0 @@
-/*---Mini Proyecto de Fundamentos---*/
-
