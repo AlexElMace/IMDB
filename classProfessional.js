@@ -30,19 +30,24 @@ var Movie = /** @class */ (function () {
         this.genre = genre;
     }
     Movie.prototype.toString = function () {
-        return "Título: " + this.title + "\n" +
-            "Año de lanzamiento: " + this.releaseYear + "\n" +
-            "Actores: " + this.actors + "\n" +
-            "Nacionalidad: " + this.nationality + "\n" +
-            "Director: " + this.director + "\n" +
-            "Guionista: " + this.writer + "\n" +
-            "Idioma: " + this.language + "\n" +
-            "Plataforma: " + this.platform + "\n" +
-            "¿Pertenece al MCU?: " + this.isMCU + "\n" +
-            "Actor principal: " + this.mainCharacterName + "\n" +
-            "Productora: " + this.producer + "\n" +
-            "Distribuidora: " + this.distributor + "\n" +
-            "Género: " + this.genre + "\n";
+        var i;
+        var actores = "";
+        console.log("Título: " + this.title);
+        console.log("Año de lanzamiento: " + this.releaseYear);
+        for (i = 0; i < this.actors.length; i++) {
+            actores += this.actors[i].name + ", ";
+        }
+        console.log(actores);
+        console.log("Nacionalidad: " + this.nationality);
+        console.log("Director: " + this.director.name);
+        console.log("Guionista: " + this.writer.name);
+        console.log("Idioma: " + this.language);
+        console.log("Plataforma: " + this.platform);
+        console.log("¿Pertenece al MCU?: " + this.isMCU);
+        console.log("Actor principal: " + this.mainCharacterName);
+        console.log("Productora: " + this.producer);
+        console.log("Distribuidora: " + this.distributor);
+        console.log("Género: " + this.genre);
     };
     return Movie;
 }());

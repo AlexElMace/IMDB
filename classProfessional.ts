@@ -61,7 +61,7 @@ export class Movie {
         for (i=0; i<this.actors.length; i++) {
             actores += this.actors[i].name + ", ";
         }
-        console.log(actores);
+        console.log("Actores: " + actores);
         console.log("Nacionalidad: " + this.nationality) 
         console.log("Director: " + this.director.name)
         console.log("Guionista: " + this.writer.name) 
