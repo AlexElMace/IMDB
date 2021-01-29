@@ -148,6 +148,11 @@ let arrayMov:Movie[] = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, 
 let imdb1:Imdb = new Imdb(arrayMov);
 
 import * as fs from "fs"
-const objetoJSON = JSON.stringify(imdb1);
+/*const objetoJSON = JSON.stringify(imdb1);
 fs.writeFileSync("./imdbBBDD.json", objetoJSON)
 let imbdJSON:Imdb = JSON.parse(fs.readFileSync("./imdbBBDD.json", "utf-8"));
+*/
+imdb1.escribirEnFicheroJSON("imdbBBDD.json");
+// let imdb2:Imdb = new Imdb([])
+// imdb2 = imdb2.obtenerInstanciaIMDB("imdbBBDD.json");
+// console.log(imdb2.peliculas[0])

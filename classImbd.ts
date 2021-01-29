@@ -10,10 +10,13 @@ export class Imdb {
     }
     
     public escribirEnFicheroJSON(nombreFichero:string) {
-        fs.writeFileSync("./imdbBBDD.json", fs.readFileSync(nombreFichero, "utf-8"))
+        fs.writeFileSync(nombreFichero, JSON.stringify(this.peliculas))
     }
 
     public obtenerInstanciaIMDB(nombreFichero:string):Imdb {
-        return JSON.parse(fs.readFileSync(nombreFichero, "utf-8"));
+        let imdb:Imdb = new Imdb([]);
+        imdb.peliculas = JSON.parse(fs.readFileSync(nombreFichero, "utf-8"));
+        return imdb
+    
     }
 }

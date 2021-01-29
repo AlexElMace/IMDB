@@ -14,12 +14,12 @@ var Movie = /** @class */ (function () {
         console.log("Título: " + this.title);
         console.log("Año de lanzamiento: " + this.releaseYear);
         for (i = 0; i < this.actors.length; i++) {
-            actores += this.actors[i].name + ", ";
+            actores += this.actors[i].professional() + ", ";
         }
         console.log("Actores: " + actores);
         console.log("Nacionalidad: " + this.nationality);
-        console.log("Director: " + this.director.name);
-        console.log("Guionista: " + this.writer.name);
+        console.log("Director: " + this.director.professional());
+        console.log("Guionista: " + this.writer.professional());
         console.log("Idioma: " + this.language);
         console.log("Plataforma: " + this.platform);
         console.log("¿Pertenece al MCU?: " + this.isMCU);
