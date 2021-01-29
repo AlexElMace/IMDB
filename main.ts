@@ -149,4 +149,5 @@ let imdb1:Imdb = new Imdb(arrayMov);
 
 import * as fs from "fs"
 const objetoJSON = JSON.stringify(imdb1);
+fs.writeFileSync("./imdbBBDD.json", objetoJSON)
 let imbdJSON:Imdb = JSON.parse(fs.readFileSync("./imdbBBDD.json", "utf-8"));
